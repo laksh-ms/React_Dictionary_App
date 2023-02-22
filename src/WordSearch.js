@@ -15,7 +15,6 @@ export default function WordSearch() {
       <form onSubmit={search}>
         <input type="search" onChange={handleChange} />
       </form>
-      <strong>Hello from WordSearch!</strong>
     </div>
   );
 }
