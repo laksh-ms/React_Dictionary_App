@@ -7,7 +7,7 @@ export default function Meanings(props) {
       <h5>{props.meaning.partOfSpeech}</h5>
       {props.meaning.definitions.map(function (definition, index) {
         return (
-          <p key={index}>
+          <div key={index}>
             {definition.definition}
             <br />
             <em>
@@ -18,9 +18,10 @@ export default function Meanings(props) {
             <em>
               <Synonyms synonyms={definition.synonyms} />
             </em>
-          </p>
+          </div>
         );
       })}
+      <br />
     </div>
   );
 }
