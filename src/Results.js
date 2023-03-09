@@ -9,7 +9,6 @@ export default function Results(props) {
       <div className="Results">
         <div className="phonetics card2">
           <h4>{props.result.word}</h4>
-
           {props.result.phonetics.map(function (phonetic, index) {
             if (
               phonetic.text === undefined ||
