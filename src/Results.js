@@ -1,4 +1,5 @@
 import React from "react";
+import Meanings from "./Meanings";
 
 export default function Results(props) {
   if (props.result === null) {
@@ -8,15 +9,33 @@ export default function Results(props) {
       <div className="Results">
         <div className="phonetics card2">
           <h4>{props.result.word}</h4>
-          <h6>
-            <i className="fa-solid fa-volume-low"></i>
-            {"  "}
-            {props.result.phonetics[1].text}
-          </h6>
+
+          {props.result.phonetics.map(function (phonetic, index) {
+            if (
+              phonetic.text === undefined ||
+              phonetic.audio === undefined ||
+              phonetic.audio === ""
+            ) {
+              return null;
+            } else {
+              return (
+                <p key={index}>
+                  <i className="fa-solid fa-volume-low"></i>
+                  {"  "}
+                  {phonetic.text}
+                </p>
+              );
+            }
+          })}
         </div>
         <div className="glossary card2">
-          <h4>{props.result.meanings[0].partOfSpeech}</h4>
-          <h5>{props.result.meanings[0].definitions[0].definition}</h5>
+          {props.result.meanings.map(function (meaning, index) {
+            return (
+              <div key={index}>
+                <Meanings meaning={meaning} />{" "}
+              </div>
+            );
+          })}
         </div>
       </div>
     );
