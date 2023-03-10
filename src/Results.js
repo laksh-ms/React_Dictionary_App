@@ -3,7 +3,7 @@ import Meanings from "./Meanings";
 
 export default function Results(props) {
   if (props.result === null) {
-    return <h6 className="card2">What word do you want to look up ?</h6>;
+    return null;
   } else {
     return (
       <div className="Results">
@@ -18,11 +18,11 @@ export default function Results(props) {
               return null;
             } else {
               return (
-                <p key={index}>
+                <div key={index}>
                   <i className="fa-solid fa-volume-low"></i>
                   {"  "}
                   {phonetic.text}
-                </p>
+                </div>
               );
             }
           })}

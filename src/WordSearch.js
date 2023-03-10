@@ -3,11 +3,11 @@ import axios from "axios";
 import Results from "./Results";
 
 export default function WordSearch() {
-  const [word, setWord] = useState("");
+  const [word, setWord] = useState("meaning");
   const [data, setData] = useState(null);
 
   function handleResponse(response) {
-    //console.log(response.data[0]);
+    console.log(response.data[0]);
     setData(response.data[0]);
   }
 
@@ -29,15 +29,19 @@ export default function WordSearch() {
 
   return (
     <div className="WordSearch">
-      <form onSubmit={searchWord}>
-        <input
-          type="search"
-          className="form-control"
-          onChange={handleChange}
-          placeholder="Search for a word... "
-          autoFocus={true}
-        />
-      </form>
+      <div className="card2">
+        <h4>What word do you want to look up ?</h4>
+        <form onSubmit={searchWord}>
+          <input
+            type="search"
+            className="form-control"
+            onChange={handleChange}
+            placeholder="Search for a word... "
+            autoFocus={true}
+          />
+        </form>
+        <div className="hint">suggested words: sunset, sunrise, hello</div>
+      </div>
       <Results result={data} />
     </div>
   );

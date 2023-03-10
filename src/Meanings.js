@@ -9,15 +9,14 @@ export default function Meanings(props) {
         return (
           <div key={index}>
             {definition.definition}
-            <br />
-            <em>
+            <div className="example">
               {definition.example === undefined
                 ? null
                 : `eg. ${definition.example}`}
-            </em>
-            <em>
+            </div>
+            <div className="synonym">
               <Synonyms synonyms={definition.synonyms} />
-            </em>
+            </div>
           </div>
         );
       })}

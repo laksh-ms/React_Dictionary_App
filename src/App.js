@@ -7,9 +7,9 @@ export default function App() {
   return (
     <div className="App">
       <div className="container">
-        <header className="App-header card">
+        <header className="App-header card2">
           <img src={logo} className="App-logo img-fluid" alt="logo" />
-          <strong>Dictionary</strong>
+          <h1>Dictionary</h1>
         </header>
         <main>
           <WordSearch />
