@@ -20,7 +20,7 @@
 }
 
 .App-header {
-  margin: 10px;
+  margin: 10px auto;
   padding: 10px;
   display: flex;
   flex-direction: row;
@@ -54,7 +54,7 @@
   border: 1px solid gray;
   border-radius: 8px;
   text-align: left;
-  padding: 15px;
+  padding: 18px;
   margin: 8px auto;
 }
 .App h4,
@@ -65,10 +65,16 @@ h5 {
 .hint {
   font-size: 13px;
   color: gray;
+  padding-top: 2px;
 }
 .example,
 .synonym {
   font-style: italic;
   font-size: 15px;
   color: gray;
+}
+
+audio {
+  width: 100px;
+  height: 25px;
 }

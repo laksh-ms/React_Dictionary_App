@@ -7,7 +7,6 @@ export default function WordSearch() {
   const [data, setData] = useState(null);
 
   function handleResponse(response) {
-    console.log(response.data[0]);
     setData(response.data[0]);
   }
 

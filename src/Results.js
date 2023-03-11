@@ -1,5 +1,6 @@
 import React from "react";
 import Meanings from "./Meanings";
+import Phonetics from "./Phonetics";
 
 export default function Results(props) {
   if (props.result === null) {
@@ -10,21 +11,11 @@ export default function Results(props) {
         <div className="phonetics card2">
           <h4>{props.result.word}</h4>
           {props.result.phonetics.map(function (phonetic, index) {
-            if (
-              phonetic.text === undefined ||
-              phonetic.audio === undefined ||
-              phonetic.audio === ""
-            ) {
-              return null;
-            } else {
-              return (
-                <div key={index}>
-                  <i className="fa-solid fa-volume-low"></i>
-                  {"  "}
-                  {phonetic.text}
-                </div>
-              );
-            }
+            return (
+              <div key={index}>
+                <Phonetics phonetic={phonetic} />
+              </div>
+            );
           })}
         </div>
         <div className="glossary card2">
