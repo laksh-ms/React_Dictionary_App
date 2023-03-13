@@ -1,0 +1,9 @@
+.Meanings h5 {
+  color: brown;
+}
+.Meanings .example,
+.synonym {
+  font-style: italic;
+  font-size: 15px;
+  color: gray;
+}

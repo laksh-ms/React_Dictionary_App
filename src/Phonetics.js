@@ -1,4 +1,5 @@
 import React from "react";
+import "./Phonetics.css";
 
 export default function Phonetics(props) {
   if (
@@ -10,8 +11,8 @@ export default function Phonetics(props) {
   } else {
     return (
       <div>
-        <audio controls>
-          <source src={props.phonetic.audio} type="audio/mpeg" />
+        <audio controls={true}>
+          <source src={props.phonetic.audio} />
         </audio>
         {"  "}
         {props.phonetic.text}

@@ -20,8 +20,6 @@
 }
 
 .App-header {
-  margin: 10px auto;
-  padding: 10px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -40,41 +38,15 @@
   color: rgb(41, 41, 41);
   text-align: center;
   font-size: 13px;
-  margin: 3px auto;
-  padding: 12px;
 }
 
-.App .card1 {
-  background-color: white;
-  border: 1px solid gray;
-  border-radius: 8px;
-}
 .App .card2 {
   background-color: white;
   border: 1px solid gray;
   border-radius: 8px;
-  text-align: left;
-  padding: 18px;
-  margin: 8px auto;
+  padding: 20px;
+  margin: 10px auto;
 }
-.App h4,
-h5 {
+.App a {
   color: brown;
-}
-
-.hint {
-  font-size: 13px;
-  color: gray;
-  padding-top: 2px;
-}
-.example,
-.synonym {
-  font-style: italic;
-  font-size: 15px;
-  color: gray;
-}
-
-audio {
-  width: 100px;
-  height: 25px;
 }

@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import axios from "axios";
 import Results from "./Results";
-
+import "./WordSearch.css";
 export default function WordSearch() {
   const [word, setWord] = useState("meaning");
   const [data, setData] = useState(null);
 
   function handleResponse(response) {
     setData(response.data[0]);
+    console.log(response.data[0]);
   }
 
   function search() {
@@ -39,7 +40,7 @@ export default function WordSearch() {
             autoFocus={true}
           />
         </form>
-        <div className="hint">suggested words: sunset, sunrise, hello</div>
+        <div className="hint">suggested words: dawn, twilight, glossary</div>
       </div>
       <Results result={data} />
     </div>

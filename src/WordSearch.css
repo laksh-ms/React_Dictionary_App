@@ -1,0 +1,10 @@
+.WordSearch h4 {
+  color: brown;
+  text-align: left;
+}
+.WordSearch .hint {
+  font-size: 13px;
+  color: gray;
+  padding-top: 2px;
+  text-align: left;
+}
