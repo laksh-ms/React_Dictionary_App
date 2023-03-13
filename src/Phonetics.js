@@ -10,11 +10,11 @@ export default function Phonetics(props) {
     return null;
   } else {
     return (
-      <div>
+      <div className="Phonetics">
         <audio controls={true}>
           <source src={props.phonetic.audio} />
         </audio>
-        {"  "}
+
         {props.phonetic.text}
       </div>
     );

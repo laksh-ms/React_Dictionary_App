@@ -12,7 +12,7 @@ export default function App() {
           <h1>Dictionary</h1>
         </header>
         <main>
-          <WordSearch />
+          <WordSearch defaultKeyword="meaning" />
         </main>
         <footer className="Footer card2">
           Coded by{" "}
