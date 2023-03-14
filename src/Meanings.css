@@ -1,5 +1,9 @@
 .Meanings h5 {
   color: brown;
+  margin-top: 10px;
+}
+.Meanings .definition {
+  margin-top: 10px;
 }
 .Meanings .example,
 .synonym {

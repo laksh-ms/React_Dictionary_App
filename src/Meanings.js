@@ -5,11 +5,11 @@ import "./Meanings.css";
 export default function Meanings(props) {
   return (
     <div className="Meanings">
-      <h5>{props.meaning.partOfSpeech}</h5>
+      <h5 className="partsofspeech">{props.meaning.partOfSpeech}</h5>
       {props.meaning.definitions.map(function (definition, index) {
         return (
           <div key={index}>
-            {definition.definition}
+            <div className="definition">{definition.definition}</div>
             <div className="example">
               {definition.example === undefined
                 ? null
