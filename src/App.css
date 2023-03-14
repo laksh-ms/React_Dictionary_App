@@ -10,7 +10,8 @@
   height: 6vmin;
   pointer-events: none;
   display: block;
-  margin: 5px;
+  margin-left: 8px;
+  margin-right: 8px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -32,6 +33,9 @@
   to {
     transform: rotate(60deg);
   }
+}
+.App h1 {
+  color: rgb(65, 15, 15);
 }
 
 .App .Footer {

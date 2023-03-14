@@ -10,6 +10,7 @@ export default function App() {
         <header className="App-header card2">
           <img src={logo} className="App-logo img-fluid" alt="logo" />
           <h1>Dictionary</h1>
+          <img src={logo} className="App-logo img-fluid" alt="logo" />
         </header>
         <main>
           <WordSearch defaultKeyword="meaning" />
